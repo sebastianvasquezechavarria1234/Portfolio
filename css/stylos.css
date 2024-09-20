@@ -123,7 +123,11 @@ body::-webkit-scrollbar-thumb:hover,
     }
     body p,
     body a{
-        font-size: 16px;
+        font-size: 12px;
+    }
+    svg{
+        width: 15px !important;
+        height: 15px !important;
     }   
 }
 
@@ -223,7 +227,7 @@ body::-webkit-scrollbar-thumb:hover,
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -100%;
+    top: -130%;
     animation: sec__anmm 3s;
     z-index: 200;
 }
@@ -236,7 +240,7 @@ body::-webkit-scrollbar-thumb:hover,
         top: 0%;
     }
     100%{
-        top: -100%;
+        top: -130%;
     }
 }
 
@@ -1100,6 +1104,7 @@ header nav ul:nth-child(2) li a:hover{
 @media screen and (max-width: 1280px){
     .sec__max__width2{
         overflow: hidden;
+        padding: 0px 10px;
     }
 }
 
@@ -1361,10 +1366,16 @@ header nav ul:nth-child(2) li a:hover{
  @media screen and (max-width: 600px){
     #hero .sec__hero__tt a:nth-child(3),
     #hero .sec__hero__tt a:nth-child(4){
-        width: calc(50% - 10px);
+        width: calc(35% - 10px);
         overflow: hidden;
         text-wrap: nowrap;
         text-overflow: ellipsis;
+        padding: 10px 15px;
+    }
+    #hero__flex__btn{
+        width: 35px;
+        height: 35px;
+        margin-top: -10px;
     }
  }
 
@@ -1532,6 +1543,13 @@ header nav ul:nth-child(2) li a:hover{
     .sec__experience__card__rigth h4 p:nth-child(2){
         padding: 0 0 15px 0px;
         margin: 0 0 0 50px;
+    }
+    .sec__experience::before{
+        left: 15px;
+    }
+    #experienceBg span:nth-child(1){
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -1760,6 +1778,10 @@ header nav ul:nth-child(2) li a:hover{
 
 
 @media screen and (max-width:975px){
+    .sec__2,
+    .sec__2__flex__flexbox{
+        gap: 10px;
+    }
     .sec__2__card{
         flex-direction: column;
     }
