@@ -1838,7 +1838,8 @@ header nav ul:nth-child(2) li a:hover{
 .sec__3__controls{
     position: sticky;
     top: 80px;
-    max-width: 400px;
+    max-width: 280px;
+    text-align: center;
     margin: 0 auto;
     display: flex;
     gap: 3px;
@@ -1852,9 +1853,11 @@ header nav ul:nth-child(2) li a:hover{
 
 .sec__3__controls p{
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     margin-bottom: 0px;
     padding: 10px;
+    border-radius: 7px;
+    
     border-radius: 5px;
     text-align: center;
     transition: all .3s;
